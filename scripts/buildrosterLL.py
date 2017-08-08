@@ -30,7 +30,7 @@ class Roster:
         nDays = (endDate - startDate).days + 1
 
         self.dates = [startDate + timedelta(i) for i in range(nDays)]
-        self.weekdays = [day.weekday() for day in self.dates]
+        self.weekdays = [day.weekday() for day in self.dates]#gets type of day        
 
         self.populateRoster()
 
@@ -269,11 +269,15 @@ def readConstraintsFile(staff_file):
 
 def readLifetimeStatsFile(stats_file):
     """Retrieve lifetime stats from config file."""
+    
+    
     statsList = []
     return statsList
 
 def readPrevExecutedRoster(prevRoster_file):
     """Retrieve lifetime stats from config file."""
+    
+    
     statstomergeList = []
     return statstomergeList
 
